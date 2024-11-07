@@ -10,3 +10,9 @@ export interface THttpArgs {
 export interface TAppStore {
   authToken: string | null;
 }
+
+export type Message = {
+  senderName: string;
+  recipientName: string;
+  message: string;
+};

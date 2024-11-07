@@ -16,7 +16,6 @@ export function RedirectPage() {
     .then(data => {
       AppActions.setAuthToken(data.token);
       navigate('/chats', {replace: true});
-      // navigate('/private', {replace: true});
     });
   }, []);
   return <div>
